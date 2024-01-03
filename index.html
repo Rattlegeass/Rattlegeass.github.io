@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Katik Segitiga</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a id="title" href="">Kalkulator Matematik</a>
+        <a href="#perimeter-of-triangle">Keliling Segitiga</a>
+        <a href="#area-of-triangle">Luas Segitiga</a>
+    </nav>
+    
+    <figure>
+        <img src="assets/segitiga.jpg" alt="Segitiga">
+    </figure>
+
+    <section>
+        <fieldset id="area-of-triangle">
+            <legend>Luas Segitiga</legend>
+            <img src="assets/rumusluassegitiga.png" alt="1/2 x a x t">
+            <h3>Dimana: <br> a = alas <br> t = tinggi </h3>
+            <div>   
+                <div>
+                    <label for="">Alas</label>
+                    <input type="number" id="input-alas" placeholder="Masukkan Alas">
+                </div>
+                <div>
+                    <label for="">Tinggi</label>
+                    <input type="number" id="input-tinggi" placeholder="Masukkan Tinggi">
+                </div>
+                <div class="button">
+                    <button id="hitung-luas">Hitung</button>
+                </div>
+                <div id="output-luas" class="output"></div>
+            </div>
+
+            <div class="back">
+                <a href="#title">Kembali ke Atas</a>
+            </div>
+        </fieldset>
+    </section>
+
+    <section>
+        <fieldset id="perimeter-of-triangle">
+            <legend>Keliling Segitiga</legend>
+            <img src="assets/rumuskelilingsegitiga.png" alt="a + b + c">
+            <h3>Dimana: <br> a, b, c = sisi segitiga </h3>
+            <div>
+                <div>
+                    <label for="">A</label>
+                    <input type="number" id="input-sisi1" placeholder="Masukkan A">
+                </div>
+                <div>
+                    <label for="">B</label>
+                    <input type="number" id="input-sisi2" placeholder="Masukkan B">
+                </div>
+                <div>
+                    <label for="">C</label>
+                    <input type="number" id="input-sisi3" placeholder="Masukkan C">
+                </div>
+                <div class="button">
+                    <button id="hitung-keliling">Hitung</button>
+                </div>
+                <div id="output-keliling" class="output"></div>
+            </div>
+            
+            <div class="back">
+            <a href="#title">Kembali ke Atas</a>
+            </div>
+        </fieldset>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
